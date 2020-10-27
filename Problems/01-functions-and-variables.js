@@ -82,10 +82,9 @@ function returnArray (first, second, third) {
 function returnArray (first, second, third) {
   let output = [first, second, third];
   return output;
-  }
-  
-  
-  console.log(returnArray)
+}
+
+console.log(returnArray)
 
 // Problem 4
 // write a function that, when passed a single argument (an array of 3 or more elements)
@@ -101,12 +100,13 @@ function returnArray (first, second, third) {
  * @returns {string} a sentence  composed from the first 3 elements of the array
  */
 function splitArray (thisArray) {
+  let output = thisArray[0] + " " + thisArray[1] + " " + "was a " + thisArray[2] + ".";
+  return output;
+}
   // remember you can access individual elements of an array with
   // array[0]
   // array[1]
   // etc.
-
-}
 
 // Problem 5
 // A. Write a simple function that takes two arguments.  Subtact the second number from the first.
@@ -118,6 +118,8 @@ function splitArray (thisArray) {
  * @returns {number} the difference of the two parameters
  */
 function subtract(number1, number2) {
+let output = number1 - number2;
+return output;
   // subtract number2 from number1, and return the result.
 }
 
@@ -127,11 +129,22 @@ function subtract(number1, number2) {
 // "I can only subtract numbers."
 
 function carefulSubtract (first, second) {
+    if (typeof first == "number" && typeof second == "number"){
+      let output = first - second;
+      return output;
+    } else {
+      return "I can only subtract numbers.";
+    }
+  }
+ //  if second = number
+  // then let output = first - secndon;
+  // if not output = "I can only subtract numbers."
+  //return output; 
+
+
   // test to be sure that both first and second are numbers.
   // if so, return the result. Otherwise, return the string
-  // "I can only subtract numbers."
-
-}
+  // "I can only subtract numbers
 
 
 
