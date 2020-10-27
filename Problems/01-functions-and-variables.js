@@ -31,10 +31,19 @@
  * @returns {string} should be exactly "Hello!"
  */
 function hello () {
+  let output =  "Hello!";
+  return output;
+}
+
+let r = hello();
+console.log(r);
+
+  
   // if you want you can declare a string variable first
   // or in this case you can just return the string directly
   // with something like "return 'Hello!'"
-}
+
+
 
 // Problem 2
 // Improve your initial function by accepting a parameter
@@ -46,12 +55,15 @@ function hello () {
  * @returns {string} a sentence that uses NAME i nits construction.
  */
 function greeting(name) {
+  let output ="Hello, " + name + "!"
+  return output
   // use the '+' operator to combine
   // strings.  So for instance, if I wanted to
   // say goodbye, I might write
   // let parting = "Goodbye, " + name + "!";
-  // (but of course, I actually want to say hello.)
+  //ut of course, I actually want to say hello.)
 }
+console.log(greeting("Margaret Atwood"))
 
 // Problem 3
 // write a function that takes three parameters and returns an array
@@ -67,7 +79,13 @@ function returnArray (first, second, third) {
   // you can define the array using "new Array ()" or just "[ , , ]"
   // don't forget to return it
 }
-
+function returnArray (first, second, third) {
+  let output = [first, second, third];
+  return output;
+  }
+  
+  
+  console.log(returnArray)
 
 // Problem 4
 // write a function that, when passed a single argument (an array of 3 or more elements)
