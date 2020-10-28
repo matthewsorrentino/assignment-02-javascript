@@ -95,6 +95,11 @@ function objectToSentence (obj) {
  * @returns {string} a sentence constructed from the object parameters
  */
 function wasWriter (obj) {
+  if(obj.profession == "novelist"){
+    let output = obj.firstName + " " + obj.lastName + " was a writer.";
+    return output;
+} else { return obj.firstName + " " + obj.lastName + " was not a writer.";
+}
   // in an if/else statement
   // it is acceptable to put the
   // "return" statement inside the conditional braces

@@ -164,11 +164,11 @@ function typeTester (unknown) {
     let output = unknown + " yay!";
     return output;
 }
-if(typeof unknown == "number") {
+else if(typeof unknown == "number") {
     let output = unknown * unknown;
     return output;
 }
-if(typeof unknown == "undefined") {
+else if(typeof unknown == "undefined") {
     let output = "Sorry, I can't do anything with an undefined value.";
     return output;
 } else {
