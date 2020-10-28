@@ -160,6 +160,21 @@ function carefulSubtract (first, second) {
  * @returns {} a meessage about unknown, or the square of unknown if it is a number
  */
 function typeTester (unknown) {
+  if(typeof unknown == "string"){
+    let output = unknown + " yay!";
+    return output;
+}
+if(typeof unknown == "number") {
+    let output = unknown * unknown;
+    return output;
+}
+if(typeof unknown == "undefined") {
+    let output = "Sorry, I can't do anything with an undefined value.";
+    return output;
+} else {
+    return "I don't know how to use that kind of variable.";
+
+}
   // use an if/else construction, a switch/case , or any other branching logic. Remember to
   // return a value. 
 }

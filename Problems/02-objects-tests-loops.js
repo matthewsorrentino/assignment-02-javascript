@@ -20,13 +20,21 @@
  * @returns {object} should have the properties firstName, lastName, and profession
  */
 function returnObject (first, last, prof) {
+  var o = {
+      firstName: first,
+      lastName: last,
+      profession: prof
+  };
+  return o;
+}
+
   // it might be easiest here to declare a variable
   // var o = {};
   // and then add properties to it one by one
   // o.firstName = first
   // etc.
   // don't forget to return the object
-}
+
 
 
 
